@@ -14,7 +14,6 @@ const memes = [
 
 const App = () => (
     <div>
-        Hello world!
         <MemeList memes={memes} />
     </div>
 )

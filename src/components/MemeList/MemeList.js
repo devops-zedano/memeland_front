@@ -3,13 +3,17 @@ import React from 'react'
 import MemeListItem from '../MemeListItem'
 
 const MemeList = (props) => (
-    <ul>
-        {
-            props.memes.map((meme) => (
-                <li><MemeListItem url={meme.url} description={meme.description} /></li>
-            ))
-        }
-    </ul>
+    <div>
+        <table>
+            {
+                props.memes.map((meme) => (
+                    <tr>
+                        <td><MemeListItem url={meme.url} description={meme.description} /></td>
+                    </tr>
+                ))
+            }
+        </table>
+    </div>
 )
 
 export default MemeList

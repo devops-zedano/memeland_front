@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './MemeListItem.module.css'
 
 const MemeListItem = (props) => (
     <div>
-        <img src={props.url} />
+        <img className={styles.item} src={props.url} />
         <p>{props.description}</p>
     </div>
 )

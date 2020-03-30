@@ -1,5 +1,6 @@
 import React from 'react'
 import MemeList from '../MemeList'
+import { withMemeFetching } from '../../hoc/withMemeFetching'
 
 const memes = [
     {
@@ -12,10 +13,11 @@ const memes = [
     }
 ]
 
-const HomePage = () => (
+const HomePage = ({ memes }) => (
     <div>
         <MemeList memes={memes} />
     </div>
 )
 
-export default HomePage
+export default withMemeFetching(HomePage)
+// export default HomePage

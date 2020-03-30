@@ -2,21 +2,23 @@ import React from 'react'
 
 import MemeListItem from '../MemeListItem'
 
-const MemeList = (props) => (
+const MemeList = ({ memes }) => (
     <div>
         <table>
-            {
-                props.memes.map((meme) => (
-                    <tr>
-                        <td>
-                            <MemeListItem
-                                url={meme.url}
-                                description={meme.description}
-                            />
-                        </td>
-                    </tr>
-                ))
-            }
+            <tbody>
+                {
+                    memes.map((meme) => (
+                        <tr>
+                            <td>
+                                <MemeListItem
+                                    url={"https://a-memeland.s3.amazonaws.com/" + meme.uri}
+                                    description={meme.description}
+                                />
+                            </td>
+                        </tr>
+                    ))
+                }
+            </tbody>
         </table>
     </div>
 )

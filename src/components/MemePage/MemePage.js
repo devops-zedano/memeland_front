@@ -13,10 +13,7 @@ const MemePage = (props) => {
     return (
         <div>
             <Link to='/' >Back to meme list</Link>
-            <AMeme
-                description={props.location.state.meme.description}
-                url={props.location.state.meme.url}
-            />
+            <AMeme {...props.location.state.meme} />
         </div>
     )
 }

@@ -8,7 +8,7 @@ const MemeList = ({ memes }) => (
             <tbody>
                 {
                     memes.map((meme) => (
-                        <tr>
+                        <tr key={meme.uri}>
                             <td>
                                 <MemeListItem
                                     url={"https://a-memeland.s3.amazonaws.com/" + meme.uri}

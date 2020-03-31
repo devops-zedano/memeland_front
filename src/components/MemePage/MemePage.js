@@ -14,6 +14,7 @@ const MemePage = (props) => {
         <div>
             <Link to='/' >Back to meme list</Link>
             <AMeme {...props.location.state.meme} />
+            <Link to='/' >Back to meme list</Link>
         </div>
     )
 }

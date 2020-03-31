@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const URL = 'https://2vnt20y917.execute-api.us-east-1.amazonaws.com/dev/generate-presigned-url'
+const URL = 'https://txe0ugfgli.execute-api.us-east-1.amazonaws.com/dev/generate-presigned-url'
 const uploadFile = (file, description) => {
     fetch(`${URL}?filename=${file.name}`)
         .then(response => response.json())

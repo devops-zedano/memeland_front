@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const URL = 'https://txe0ugfgli.execute-api.us-east-1.amazonaws.com/dev/list'
+const URL = process.env.REACT_APP_LIST_MEMES_URL
 
 export default () => {
     const [memes, setMemes] = useState([]);

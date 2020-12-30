@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './MemeListItem.module.css'
 import { Link } from 'react-router-dom'
 
-const deleteURL = 'https://txe0ugfgli.execute-api.us-east-1.amazonaws.com/dev/delete'
+const deleteURL = process.env.REACT_APP_DELETE_MEME_URL
 const MemeListItem = (props) => {
     const handleDelete = (e) => {
         e.preventDefault()

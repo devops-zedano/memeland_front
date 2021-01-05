@@ -1,0 +1,17 @@
+.item {
+    max-width: 200px;
+    max-height: 150px;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.cardMedia {
+    /* padding-top: 56.25%; */
+    height: 300px;
+    width: 100%;
+}
